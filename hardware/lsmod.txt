@@ -1,0 +1,86 @@
+Module                  Size  Used by
+bnep                   17535  2 
+rfcomm                 33471  0 
+bluetooth             170002  10 bnep,rfcomm
+nfsd                  196058  2 
+auth_rpcgss            39090  1 nfsd
+oid_registry           12419  1 auth_rpcgss
+nfs_acl                12511  1 nfsd
+nfs                   114400  0 
+lockd                  59673  2 nfs,nfsd
+dns_resolver           12641  1 nfs
+fscache                37551  1 nfs
+sunrpc                164622  6 nfs,nfsd,auth_rpcgss,lockd,nfs_acl
+nvidia              11005745  54 
+snd_hda_codec_hdmi     35757  1 
+joydev                 17278  0 
+coretemp               12898  0 
+hid_logitech_dj        17445  0 
+drm                   211856  2 nvidia
+snd_hda_codec_realtek    37042  1 
+eeepc_wmi              12600  0 
+kvm_intel             123583  0 
+usbhid                 40964  0 
+snd_hda_intel          35718  5 
+snd_hda_codec         122850  3 snd_hda_codec_realtek,snd_hda_codec_hdmi,snd_hda_intel
+i2c_i801               17045  0 
+hid                    81986  2 usbhid,hid_logitech_dj
+acpi_cpufreq           13280  0 
+asus_wmi               19015  1 eeepc_wmi
+sparse_keymap          12760  1 asus_wmi
+rfkill                 19242  3 bluetooth,asus_wmi
+iTCO_wdt               12831  0 
+iTCO_vendor_support    12704  1 iTCO_wdt
+lpc_ich                16757  0 
+kvm                   305638  1 kvm_intel
+mperf                  12453  1 acpi_cpufreq
+psmouse                74884  0 
+processor              28558  1 acpi_cpufreq
+i2c_core               24353  3 drm,i2c_i801,nvidia
+snd_hwdep              13189  1 snd_hda_codec
+mfd_core               12601  1 lpc_ich
+serio_raw              12940  0 
+evdev                  17599  16 
+crc32c_intel           21850  0 
+snd_pcm                68525  3 snd_hda_codec_hdmi,snd_hda_codec,snd_hda_intel
+snd_page_alloc         13018  2 snd_pcm,snd_hda_intel
+snd_timer              22773  1 snd_pcm
+snd                    53116  17 snd_hda_codec_realtek,snd_hwdep,snd_timer,snd_hda_codec_hdmi,snd_pcm,snd_hda_codec,snd_hda_intel
+soundcore              13026  1 snd
+video                  17792  1 asus_wmi
+mei_me                 13568  0 
+mei                    45941  1 mei_me
+mxm_wmi                12515  0 
+pcspkr                 12632  0 
+button                 12944  0 
+ghash_clmulni_intel    13019  0 
+aesni_intel            50895  0 
+aes_x86_64             16719  1 aesni_intel
+ablk_helper            12572  1 aesni_intel
+cryptd                 14560  3 ghash_clmulni_intel,aesni_intel,ablk_helper
+lrw                    12871  1 aesni_intel
+gf128mul               13047  1 lrw
+glue_helper            12768  1 aesni_intel
+wmi                    13243  2 mxm_wmi,asus_wmi
+microcode              30176  0 
+ext4                  385707  3 
+crc16                  12343  2 ext4,bluetooth
+jbd2                   76205  1 ext4
+mbcache                13082  1 ext4
+sg                     26095  0 
+sd_mod                 40541  4 
+crc_t10dif             12348  1 sd_mod
+ahci                   25148  3 
+libahci                23217  1 ahci
+r8169                  52872  0 
+mii                    12675  1 r8169
+libata                141969  2 ahci,libahci
+scsi_mod              158235  3 sg,libata,sd_mod
+ehci_pci               12472  0 
+ehci_hcd               40626  1 ehci_pci
+xhci_hcd               78383  0 
+fan                    12681  0 
+thermal                17468  0 
+thermal_sys            23137  4 fan,video,thermal,processor
+usbcore               135026  4 ehci_hcd,ehci_pci,usbhid,xhci_hcd
+usb_common             12440  1 usbcore
